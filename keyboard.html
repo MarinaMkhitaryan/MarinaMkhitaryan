@@ -1,0 +1,562 @@
+<!Doctype HTML >
+
+<head>
+
+    <meta charset ="utf-8">
+
+    <title>Keyboard</title>
+
+    
+    <link rel="stylesheet" href = "keyboard.css"  >
+
+</head>
+
+<body>
+
+    
+    
+    <input id="inp" class="inp" >
+    <br><br>
+
+    <div onclick="showKeyboard()" class="show" id="show"><span class="sun" > &#9728;</span></div>
+
+    <div class="container" id="container">
+
+        <div class="divCross" id="divCross">
+            <div class="min" id="min">_</div>
+            <div onclick="cross()" class="cross" id="cross">X</div>
+        </div>
+        
+
+        <div class="row1" id="row1">
+
+            <div class="key" id="q"> 
+                <div class="keySmall" id="qsmall">
+                
+                    <div onclick="qkey()" class="front" id="qkeyfront" >
+                        q
+                    </div>
+                
+                    <div onclick="Q()" class="back" id="qback" >
+                        Q
+                    </div>
+                    
+                
+                
+                </div>  
+                
+            </div>
+
+            <div class="key" id="w"> 
+                <div class="keySmall" id="wsmall">
+                    
+                    <div onclick="w()" class="front" id="wfront" >
+                        w
+                    </div>
+                    
+                    
+                    <div onclick="W()" class="back" id="wback" >
+                        W
+                    </div>
+
+                </div>            
+            </div>
+
+            <div class="key" id="e"> 
+                <div class="keySmall" id="esmall">
+                
+                    <div onclick="e()" class="front" id="efront" >
+                        e
+                    </div>
+
+                    <div onclick="E()" class="back" id="eback" >
+                        E
+                    </div>
+                
+                </div>            
+            </div>
+
+            <div class="key" id="r"> 
+                <div class="keySmall" id="rsmall">
+                    
+                    <div onclick="r()" class="front" id="rfront" >
+                        r
+                    </div>
+                    
+                    <div onclick="R()" class="back" id="rback" >
+                        R
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="t"> 
+                <div class="keySmall" id="tsmall">
+                    
+                    <div onclick="t()" class="front" id="tfront" >
+                        t
+                    </div>
+                    
+                    <div onclick="T()" class="back" id="tback" >
+                        T
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="y"> 
+                <div class="keySmall" id="ysmall">
+                    
+                    <div onclick="y()" class="front" id="yfront" >
+                        y
+                    </div>
+                    
+                    <div onclick="Y()" class="back" id="yback" >
+                        Y
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="u"> 
+                <div class="keySmall" id="usmall">
+                    
+                    <div onclick="u()" class="front" id="ufront" >
+                        u
+                    </div>
+                    
+                    <div onclick="U()" class="back" id="uback" >
+                        U
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="i"> 
+                <div class="keySmall" id="ismall">
+                    
+                    <div onclick="i()" class="front" id="ifront" >
+                        i
+                    </div>
+                    
+                    <div onclick="I()" class="back" id="iback" >
+                        I
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="o"> 
+                <div class="keySmall" id="osmall">
+                    
+                    <div onclick="O()" class="front" id="ofront" >
+                        o
+                    </div>
+                    
+                    <div onclick="o()" class="back" id="oback" >
+                        O
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="p"> 
+                <div class="keySmall" id="psmall">
+                    
+                    <div onclick="p()" class="front" id="pfront" >
+                        p
+                    </div>
+                    
+                    <div onclick="P()" class="back" id="pback" >
+                        P
+                    </div>
+                    
+                </div>            
+            </div>
+            <div onclick="del()"  class="del" id="del"> 
+                <div  class="delSmall" id="delSmall">
+                    
+                    <div  class="delfront" id="delfront" >
+                        <p>Delete</p>
+                    </div>
+                    
+                </div>            
+            </div>
+
+
+        </div>
+
+
+
+        <div class="row2" id="row2">
+
+            <div class="key" id="a"> 
+                <div class="keySmall" id="asmall">
+                    
+                    <div onclick="a()" class="front" id="afront" >
+                        a
+                    </div>
+                    
+                    <div onclick="A()" class="back" id="aback" >
+                        A
+                    </div>
+                    
+                </div>            
+            </div>
+
+            <div class="key" id="s"> 
+                <div class="keySmall" id="ssmall">
+                    
+                    <div onclick="s()" class="front" id="sfront" >
+                        s
+                    </div>
+                    
+                    <div onclick="S()" class="back" id="sback" >
+                        S
+                    </div>
+                    
+                </div>            
+            </div>
+
+            <div class="key" id="d"> 
+                <div class="keySmall" id="dsmall">
+                    
+                    <div onclick="d()" class="front" id="dfront" >
+                        d
+                    </div>
+                    
+                    <div onclick="D()" class="back" id="dback" >
+                        D
+                    </div>
+                    
+                </div>            
+            </div>
+
+            <div class="key" id="f"> 
+                <div class="keySmall" id="fsmall">
+                    
+                    <div onclick="f()" class="front" id="ffront" >
+                        f
+                    </div>
+                    
+                    <div onclick="F()" class="back" id="fback" >
+                        F
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="g"> 
+                <div class="keySmall" id="gsmall">
+                    
+                    <div onclick="g()" class="front" id="gfront" >
+                        g
+                    </div>
+                    
+                    <div onclick="G()" class="back" id="gback" >
+                        G
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="h"> 
+                <div class="keySmall" id="hsmall">
+                    
+                    <div onclick="h()" class="front" id="hfront" >
+                        h
+                    </div>
+                    
+                    <div onclick="H()" class="back" id="hback" >
+                        H
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="j"> 
+                <div class="keySmall" id="jsmall">
+                    
+                    <div onclick="j()" class="front" id="jfront" >
+                        j
+                    </div>
+                    
+                    <div onclick="J()" class="back" id="jback" >
+                        J
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="k"> 
+                <div class="keySmall" id="ksmall">
+                    
+                    <div onclick="k()" class="front" id="kfront" >
+                        k
+                    </div>
+                    
+                    <div onclick="K()" class="back" id="kback" >
+                        K
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="l"> 
+                <div class="keySmall" id="lsmall">
+                    
+                    <div onclick="l()" class="front" id="lfront" >
+                        l
+                    </div>
+                    
+                    <div onclick="L()" class="back" id="lback" >
+                        L
+                    </div>
+                    
+                </div>            
+            </div>
+            <div onclick="enter()" class="enter" id="enter"> 
+                <div class="enterSmall" id="enterSmall">
+                    
+                    <div class="front" id="enterfront" >
+                        Enter
+                    </div>
+                    
+                </div>            
+            </div>
+
+
+        </div>
+
+
+        <div class="row3" id="row3">
+
+
+            <div onclick="big()" class="up" id="up"> 
+                <div class="upSmall" id="upSmall">
+                
+                    <div class="front" id="upfront" >
+                        <p>&#x2191</p>
+                    </div>
+                
+                </div>            
+            </div>
+
+
+
+
+            <div class="key" id="z"> 
+                <div class="keySmall" id="zsmall">
+                    
+                    <div onclick="z()" class="front" id="zfront" >
+                        z
+                    </div>
+                    
+                    <div onclick="Z()" class="back" id="zback" >
+                        Z
+                    </div>
+                    
+                </div>            
+            </div>
+
+            <div class="key" id="x"> 
+                <div class="keySmall" id="xsmall">
+                    
+                    <div onclick="x()" class="front" id="xfront" >
+                        x
+                    </div>
+                    
+                    <div onclick="X()" class="back" id="Xback" >
+                        X
+                    </div>
+                    
+                </div>            
+            </div>
+
+            <div class="key" id="c"> 
+                <div class="keySmall" id="csmall">
+                    
+                    <div onclick="c()" class="front" id="cfront" >
+                        c
+                    </div>
+                    
+                    <div onclick="C()" class="back" id="cback" >
+                        C
+                    </div>
+                    
+                </div>            
+            </div>
+
+            <div class="key" id="v"> 
+                <div class="keySmall" id="vsmall">
+                    
+                    <div onclick="v()" class="front" id="vfront" >
+                        v
+                    </div>
+                    
+                    <div onclick="V()" class="back" id="vback" >
+                        V
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="b"> 
+                <div class="keySmall" id="bsmall">
+                    
+                    <div onclick="b()" class="front" id="bfront" >
+                        b
+                    </div>
+                    
+                    <div onclick="B()" class="back" id="bback" >
+                        B
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="n"> 
+                <div class="keySmall" id="nsmall">
+                    
+                    <div onclick="n()" class="front" id="nfront" >
+                        n
+                    </div>
+                    
+                    <div onclick="N()" class="back" id="nback" >
+                        N
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="key" id="m"> 
+                <div class="keySmall" id="msmall">
+                    
+                    <div onclick="m()" class="front" id="mfront" >
+                        m
+                    </div>
+                    
+                    <div onclick="M()" class="back" id="mback" >
+                        M
+                    </div>
+                    
+                </div>            
+            </div>
+
+
+
+            <div  class="key keySmall" id="comma"> 
+                <div class="commaSmall" id="commasmall">
+                    
+                    <div onclick="comma()" class="front" id="commafront" >
+                        ,
+                    </div>
+                    
+                    <div onclick="commaback()" class="back" id="commaback" >
+                        .
+                    </div>
+                    
+                </div>            
+            </div>
+            <div class="keydot" id="dot"> 
+                <div class="keySmalldot" id="dotsmall">
+                    
+                    <div class="dotback" id="dotfront" >
+                        .
+                    </div>
+                    
+                </div>            
+            </div>
+            <div  class="key keySmall" id="drop"> 
+                <div class="dropSmall" id="dropSmall">
+                    
+                    <div onclick="drop()" class="front" id="dropfront" >
+                        /
+                    </div>
+                    
+                    <div onclick="dropback()" class="back" id="dropback" >
+                        ?
+                    </div>
+                    
+                </div>            
+            </div>
+
+            <div onclick="big()" class="up" id="up"> 
+                <div class="upSmall" id="upSmall">
+                
+                    <div class="front" id="upfront" >
+                        &#x2191
+                    </div>
+                
+                </div>            
+            </div>
+
+
+
+
+        </div>
+        <div class="row4" id="row4">
+
+            <div  class="num" id="num"> 
+                <div class="numSmall" id="numsmall">
+                    
+                    <div onclick="num()" class="front" id="numfront" >
+                        &123
+                    </div>
+                    
+                </div>            
+            </div>
+
+            <div class="ctrl" id="ctrl"> 
+                <div class="ctrlSmall" id="ctrlsmall">
+                    
+                    <div class="front" id="ctrlfront" >
+                        Ctrl
+                    </div>
+                    
+                </div>            
+            </div>
+
+            <div onclick="emoji()" class="smile" id="smile"> 
+                <div class="smileSmall" id="smilesmall">
+                
+                    <div class="front" id="smilefront" >
+                        &#9787;
+                    </div>
+                
+                </div>            
+            </div>
+
+            <div onclick="space()" class="space" id="space"> 
+                <div class="spaceSmall" id="spacesmall">
+                    
+                    <div class="spacefront" id="spacefront" >
+                        
+                    </div>
+                    
+                </div>            
+            </div>
+            <div onclick="left()" class="left" id="left"> 
+                <div class="leftSmall" id="leftsmall">
+                    
+                    <div class="front" id="leftfront" >
+                        <
+                    </div>
+                    
+                </div>            
+            </div>
+            <div onclick="right()" class="right" id="right"> 
+                <div class="rightSmall" id="rightsmall">
+                
+                    <div class="front" id="rightfront" >
+                        >
+                    </div>
+                
+                </div>            
+            </div>
+            <div onclick="color()" class="color" id="color"> 
+                <div class="colorSmall" id="colorsmall">
+                
+                    <div class="front" id="colorfront" >
+                        &#9760;
+                    </div>
+                
+                </div>            
+            </div>
+
+
+        </div>
+  
+    
+    </div>
+    
+    <script src ="keyboard.js" ></script>
+</body>
+</html>
+
